@@ -36,6 +36,7 @@ jobs:
       uses: actions/setup-go@v5
       with:
         go-version-file: ./apps/backend/go.mod
+        cache-dependency-path: ./apps/backend/go.sum
       id: go
 
     - name: Install golang-migrate
